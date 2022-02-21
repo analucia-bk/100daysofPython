@@ -5,8 +5,6 @@ test_seed = int(input("Create a seed number: "))
 random.seed(test_seed)
 names_string = input("Give me everybody's names, separated by a comma. ")
 names = names_string.split(", ")
-number_list = len(names)
-random_num = random.randrange(0, number_list)
-random_name = names[random_num]
+random_name = names[random.randrange(0, len(names))]
 print(f"{random_name} is going to buy the meal today")
 
